@@ -27,9 +27,8 @@ html {
       height: 600px;
     }
   }
-  
 
-  h1{
-    font-family: $josefin;
-    color:$sunSetOrange;
-  }
+.content__right{
+  margin-left: -12px;
+}
+

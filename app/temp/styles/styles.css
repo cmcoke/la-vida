@@ -1482,7 +1482,6 @@ a {
       height: 600px
   }
     }
-h1{
-    font-family: 'Josefin Sans', sans-serif;
-    color:#FF595E;
-  }
+.content__right{
+  margin-left: -12px;
+}
