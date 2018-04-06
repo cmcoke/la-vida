@@ -1,0 +1,42 @@
+.site-header{
+    
+    
+    &__logo{
+        display: flex;
+        justify-content: center;
+        font-family: $raleway;
+        font-size: 2.3125rem;
+        margin-bottom:0;
+
+        @mixin atExSmall{
+            margin-top: 6px;
+        }
+    }
+
+    &__menu{
+        margin-left: -57px;
+    }
+
+    &__menu ul{
+        display: flex;
+        justify-content: space-around;
+        text-transform:uppercase;
+        font-family: $quicksand;
+        margin-top:0;
+        
+    }
+
+    & a{
+        transition:250ms;
+    }
+
+    &__menu a:hover{
+        color:$pastelOrange;
+        
+    }
+
+    &__current{
+        color:$pastelOrange;
+    }
+   
+}
