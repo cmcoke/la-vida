@@ -11,6 +11,18 @@
         @mixin atExSmall{
             margin-top: 6px;
         }
+
+        @mixin atSmall{
+            margin-top: -1px;
+        }
+
+        @mixin atMedium{
+            margin-top: -5px;
+        }
+
+        @mixin atLarge{
+            margin-top: 3px;
+        }
     }
 
     &__menu{

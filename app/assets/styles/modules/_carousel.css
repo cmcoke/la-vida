@@ -1,0 +1,42 @@
+.carousel-cell{
+    position: relative;
+    width: 100%;
+    height: auto;
+    opacity: 0.9;
+    transition:250ms;
+
+    &:hover{
+        opacity: 1;
+        filter: alpha(opacity=100);
+    }
+
+}
+
+.carousel__content{
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    left:0;
+    width: 100%;
+    text-align: center;
+
+    & h3, p{
+        font-family: $raleway;
+        color:#fff;
+        text-transform:uppercase;
+    }
+
+
+    & h3{
+        font-size: 1.4375rem;
+        margin-top: 0.9375rem;
+        margin-bottom: 0;
+    }
+
+    & p{
+        margin-top: 0.6875rem;
+        font-size: 0.6875rem;
+    }
+
+}
+
