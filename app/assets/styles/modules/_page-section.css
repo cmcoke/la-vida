@@ -1,0 +1,7 @@
+.page-section{
+    padding-top: 4.2rem;
+
+    &--subpost-section{
+        padding-top: 2rem;
+    }
+}

@@ -1,0 +1,30 @@
+.post-section{
+    font-family: $raleway;
+    text-transform:uppercase;
+
+  &::after{
+    content: '';
+    background-color:#DBDBDB;
+    display: inline-block;
+    width: 85%;
+    height: .1rem;
+    margin-bottom: 5px;
+    margin-left: 2px;
+
+    @mixin atMedium{
+      width: 65%;
+      margin-left: 11px;
+    }
+
+    @mixin atLarge{
+      width: 70%;
+      margin-left: 12px;
+    }
+
+    @mixin atExLarge{
+      width: 70%;
+      margin-left: 12px;
+    }
+
+  }
+}

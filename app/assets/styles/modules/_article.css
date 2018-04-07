@@ -1,5 +1,5 @@
 .article{
-  
+
 
     &__type{
         font-family: $raleway;
@@ -18,8 +18,52 @@
     }
 
     &__heading{
-        
+        font-family: $raleway;
+        text-transform:uppercase;
+        transition:250ms;
     }
+
+    &__heading:hover{
+        color:$coralRed;
+    }
+
+
+    &__subpost{
+        opacity: 0.9;
+        transition:250ms;  
+    
+        &:hover{
+            opacity: 1;
+            filter: alpha(opacity=100); 
+            color:  $sunSetOrange;
+        }
+    }
+
+    &__subpost-heading{
+        font-family: $raleway;
+        font-size: 1.1875rem;
+        margin-top:0.125rem;
+
+    }
+
+
+    &__author{
+        font-family: $raleway;
+        text-transform:uppercase;
+        margin-top:-1rem;
+        font-size: 0.6875rem;
+    }
+
+    &__img{
+        opacity: 0.9;
+        transition:250ms;   
+    }
+
+    &__img:hover{
+        opacity: 1;
+        filter: alpha(opacity=100);  
+    }
+
 
 
 }
