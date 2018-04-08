@@ -1727,6 +1727,11 @@ https://flickity.metafizzy.co
 .article__heading:hover{
         color:#FF3D43;
     }
+.article__heading--sidebar{
+        margin-top: 2px;
+        font-size: 12px;
+        line-height: 1.50;
+    }
 .article__subpost{
         opacity: 0.9;
         -webkit-transition:250ms;
@@ -1761,8 +1766,10 @@ https://flickity.metafizzy.co
 .generic-content{
     font-family: 'Quicksand', sans-serif;
     line-height: 1.90;
-    
 }
+.generic-content--latest-post{
+        line-height: 1.60;
+    }
 .page-section{
     padding-top: 4.2rem;
 }
@@ -1804,3 +1811,27 @@ https://flickity.metafizzy.co
 
   }
     }
+.post-section--sidebar{
+    font-size: 12px;
+  }
+.post-section--sidebar::after{
+      visibility: hidden;
+    }
+.page-number{
+    display: inline-block;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
+    width: 35px;
+    height: 35px;
+    text-align:center;
+    padding:.4rem .7rem;
+    margin-top:33px;
+    border-color:#111;
+    border: 1px solid;
+    background-color:#343434;
+    color:#fff;
+}
+.content__top-left{
+        margin-bottom: 5rem;
+    }
+

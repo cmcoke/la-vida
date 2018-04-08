@@ -2,4 +2,7 @@
     font-family: $quicksand;
     line-height: 1.90;
     
+    &--latest-post{
+        line-height: 1.60;
+    }
 }

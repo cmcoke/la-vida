@@ -27,4 +27,12 @@
     }
 
   }
+
+  &--sidebar{
+    font-size: 12px;
+
+    &::after{
+      visibility: hidden;
+    }
+  }
 }

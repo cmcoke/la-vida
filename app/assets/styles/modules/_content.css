@@ -1,0 +1,5 @@
+.content{
+    &__top-left{
+        margin-bottom: 5rem;
+    }
+}
