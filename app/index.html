@@ -407,29 +407,40 @@
         </div>
     </section>
 
-    <footer>
+    <footer class=" page-section page-section--footer site-footer">
         <div class="container">
-            <div class="grid">
+            <div class="grid align-end">
                 <div class="col-sm-12 col-md-1">
-                    <h4>La Vida</h4>
+                    <h4 class="site-footer__logo">La Vida</h4>
                 </div>
-                <div class="col-sm-12 col-md-4">
-                    <a href="#">About Us</a>
-                    <a href="#">Advertise</a>
-                    <a href="#">Contact Us</a>
+                <div class="site-footer__divider"></div>
+                <div class="col-sm-12 col-md-4 col-grid site-footer__info">
+                   <ul>
+                       <li><a href="#">About Us</a></li>
+                       <li><a href="#">Advertise</a></li>
+                       <li><a href="#">Contact Us</a></li>
+                   </ul>
                 </div>
-                <div class="col-sm-12 col-md-4">
-                    <h4>Follow Us
-                        <h4>
-                            <a href="#">facebook</a>
-                            <a href="#">twitter</a>
-                            <a href="#">youtube</a>
+                <div class="col-sm-12 col-md-4 col-grid">
+                    <h4 class="site-footer__heading site-footer__heading--social">Follow Us On Social Media<h4>
+                    <div class="site-footer__info">
+                        <ul class="site-footer__social-links">
+                            <li><a href="#">facebook</a></li>
+                            <li><a href="#">twitter</a></li>
+                            <li><a href="#">youtube</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="col-sm-12 col-md-3">
-                    <input type="text" value="Subscribe To NewsLetter">
-                    <input type="submit" value="Submit">
+                <div class="col-sm-12 col-md-3 site-footer__newsletter">
+                    <h4 class="site-footer__heading site-footer__heading--newsletter">Subscribe to our newsletter<h4>
+                    <input type="email" placeholder="Enter email address">
+                    <input type="submit" value="SUBMIT">
+                </div>
+                <div class="col-sm-12 site-footer__creator">
+                    <p class="flex-footer">C.Coke 2018</p>
                 </div>
             </div>
+
         </div>
     </footer>
 

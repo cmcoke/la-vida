@@ -4,4 +4,8 @@
     &--subpost-section{
         padding-top: 2rem;
     }
+
+    &--footer{
+        padding-top: .2rem;
+    }
 }
