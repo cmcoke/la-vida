@@ -1483,9 +1483,6 @@ a {
       height: 600px
   }
     }
-.content__right{
-  margin-left: -12px;
-}
 .site-header__logo{
         display: -webkit-box;
         display: -ms-flexbox;
@@ -1662,15 +1659,9 @@ https://flickity.metafizzy.co
     position: relative;
     width: 100%;
     height: auto;
-    opacity: 0.9;
-    -webkit-transition:250ms;
-    transition:250ms;
+
 
 }
-.carousel-cell:hover{
-        opacity: 1;
-        filter: alpha(opacity=100);
-    }
 .carousel__content{
     position: absolute;
     top:50%;
@@ -1725,23 +1716,17 @@ https://flickity.metafizzy.co
         transition:250ms;
     }
 .article__heading:hover{
-        color:#FF3D43;
-    }
+            color:#FF595E;
+        }
 .article__heading--sidebar{
         margin-top: 2px;
         font-size: 12px;
         line-height: 1.50;
     }
-.article__subpost{
-        opacity: 0.9;
-        -webkit-transition:250ms;
-        transition:250ms;
+.article__heading--headlines{
+        color:#fff;
+        font-size: 20px;
     }
-.article__subpost:hover{
-            opacity: 1;
-            filter: alpha(opacity=100); 
-            color:  #FF595E;
-        }
 .article__subpost-heading{
         font-family: 'Raleway', sans-serif;
         font-size: 1.1875rem;
@@ -1753,15 +1738,6 @@ https://flickity.metafizzy.co
         text-transform:uppercase;
         margin-top:-1rem;
         font-size: 0.6875rem;
-    }
-.article__img{
-        opacity: 0.9;
-        -webkit-transition:250ms;
-        transition:250ms;   
-    }
-.article__img:hover{
-        opacity: 1;
-        filter: alpha(opacity=100);  
     }
 .generic-content{
     font-family: 'Quicksand', sans-serif;
@@ -1834,8 +1810,37 @@ https://flickity.metafizzy.co
     background-color:#343434;
     color:#fff;
 }
+.overlay{
+    opacity: 0.9;
+    -webkit-transition:250ms;
+    transition:250ms;
+    
+}
+.overlay:hover{
+        opacity: 1;
+        filter: alpha(opacity=100); 
+    }
+.overlay--subpost:hover{
+            color:  #FF595E;
+        }
+.content{
+
+
+
+    /* &__left{
+        position: fixed;
+        top:0;
+        right: 0;
+        height: auto;
+        z-index: 1;
+        overflow-x: hidden;
+    } */
+}
 .content__top-left{
         margin-bottom: 5rem;
+    }
+.content__right{
+        margin-left: -12px;
     }
 .site-footer{
     background-color:black;
@@ -2040,5 +2045,103 @@ https://flickity.metafizzy.co
 .site-footer__creator{
             margin-left: 44rem
     }
+    }
+.main-article{
+    
+    display: -webkit-box;
+    
+    display: -ms-flexbox;
+    
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+.main-article__right{
+        position: relative;
+    }
+.main-article__right a{
+            color:#fff;
+            font-family: 'Raleway', sans-serif;
+            font-size: 22px;
+        }
+@media(min-width:1281px){
+.main-article__right a{
+                font-size: 30px
+        }
+    }
+@media(max-width: 575px){
+.main-article__left{
+            margin-top: -30px
+    }
+    }
+@media(min-width:992px) and (max-width: 1280px){
+.main-article__left{
+            margin-top: 4px;
+            margin-left:-22px
+    }
+    }
+@media(min-width:1281px){
+.main-article__left{
+            margin-left:-24px
+    }
+    }
+.main-article__top-left{
+        position: relative;
+    }
+.main-article__top-left a{
+            color:#fff;
+            font-family: 'Raleway', sans-serif;
+            font-size: 22px;
+        }
+@media(min-width:1281px){
+.main-article__top-left a{
+                font-size: 30px
+        }
+    }
+.main-article__bottom-left{
+        position: relative;
+    }
+@media(min-width:992px) and (max-width: 1280px){
+.main-article__bottom-left{
+            margin-top:-11px
+    }
+    }
+@media(min-width:1281px){
+.main-article__bottom-left{
+            margin-top:-11px
+    }
+    }
+.main-article__bottom-left a{
+            color:#fff;
+            font-family: 'Raleway', sans-serif;
+            font-size: 22px;
+        }
+@media(min-width:1281px){
+.main-article__bottom-left a{
+                font-size: 30px
+        }
+    }
+.main-article__title{
+        position: absolute;
+        top:50%;
+        -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
+        left: 0%;
+        width: 100%;
+        text-align: center;
     }
 

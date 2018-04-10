@@ -1,0 +1,17 @@
+.overlay{
+    opacity: 0.9;
+    transition:250ms;
+    
+    &:hover{
+        opacity: 1;
+        filter: alpha(opacity=100); 
+    }
+
+    &--subpost{
+
+        &:hover{
+            color:  $sunSetOrange;
+        }
+    }
+    
+}

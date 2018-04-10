@@ -2,13 +2,7 @@
     position: relative;
     width: 100%;
     height: auto;
-    opacity: 0.9;
-    transition:250ms;
 
-    &:hover{
-        opacity: 1;
-        filter: alpha(opacity=100);
-    }
 
 }
 
