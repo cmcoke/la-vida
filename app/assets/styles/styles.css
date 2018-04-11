@@ -17,4 +17,5 @@
 @import "modules/_content";
 @import "modules/_site-footer";
 @import "modules/_main-article";
-
+@import "modules/_heading";
+@import "modules/_sidebar";

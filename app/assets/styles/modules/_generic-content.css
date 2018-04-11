@@ -5,4 +5,8 @@
     &--latest-post{
         line-height: 1.60;
     }
+
+    &--bio{
+        font-size: 15px;
+    }
 }

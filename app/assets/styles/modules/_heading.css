@@ -1,0 +1,12 @@
+.heading{
+    font-family: $raleway;
+
+    &--article{
+        font-family: $raleway;
+        text-transform:uppercase;
+    }
+
+    &--author{
+        margin-bottom: -10px;
+    }
+}

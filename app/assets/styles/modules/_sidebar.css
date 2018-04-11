@@ -1,0 +1,10 @@
+.sidebar{
+    
+    @mixin atLarge{
+        margin-left: 56px;
+    }
+
+    @mixin atExLarge{
+        margin-left: 127px;
+    }
+}

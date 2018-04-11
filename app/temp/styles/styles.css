@@ -1660,8 +1660,34 @@ https://flickity.metafizzy.co
     width: 100%;
     height: auto;
 
-
 }
+.carousel-cell-custom-size{
+    width: 100%;
+}
+@media(min-width: 576px) and (max-width: 767px){
+.carousel-cell-custom-size{
+        width: 50%;
+        padding: .3rem
+}
+    }
+@media(min-width:768px) and (max-width: 991px){
+.carousel-cell-custom-size{
+        width:33.33%;
+        padding: .5rem
+}
+    }
+@media(min-width:992px) and (max-width: 1280px){
+.carousel-cell-custom-size{
+        width:33%;
+        padding: .3rem
+}
+    }
+@media(min-width:1281px){
+.carousel-cell-custom-size{
+        width: 25%;
+        padding: .3rem
+}
+    }
 .carousel__content{
     position: absolute;
     top:50%;
@@ -1739,12 +1765,26 @@ https://flickity.metafizzy.co
         margin-top:-1rem;
         font-size: 0.6875rem;
     }
+.article__author-bio{
+        margin-top: 22px;
+        
+    }
+.article__author-img{
+        margin-top:50px;
+    }
+.article__header{
+        text-align: center;
+        margin-bottom: 2rem;
+    }
 .generic-content{
     font-family: 'Quicksand', sans-serif;
     line-height: 1.90;
 }
 .generic-content--latest-post{
         line-height: 1.60;
+    }
+.generic-content--bio{
+        font-size: 15px;
     }
 .page-section{
     padding-top: 4.2rem;
@@ -2144,4 +2184,23 @@ https://flickity.metafizzy.co
         width: 100%;
         text-align: center;
     }
-
+.heading{
+    font-family: 'Raleway', sans-serif;
+}
+.heading--article{
+        font-family: 'Raleway', sans-serif;
+        text-transform:uppercase;
+    }
+.heading--author{
+        margin-bottom: -10px;
+    }
+@media(min-width:992px) and (max-width: 1280px){
+.sidebar{
+        margin-left: 56px
+}
+    }
+@media(min-width:1281px){
+.sidebar{
+        margin-left: 127px
+}
+    }
