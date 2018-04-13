@@ -23,4 +23,9 @@
         text-align: center;
     }
 
+    &--site-footer{
+        color:#fff;
+        font-size: 12px;
+    }
+
 }

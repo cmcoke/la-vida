@@ -1,198 +1,170 @@
 .site-footer{
+    text-align: center;
     background-color:black;
 
     &__logo{
-        font-family: $raleway;
-        font-size: 25px;
-        text-align:center;
-        color:#fff;
+
+        @mixin atLarge{
+            margin-top:6rem;
+        }
 
         @mixin atExLarge{
-            margin-bottom: 6rem;
+            /* margin-top:6rem; */
+            margin-left:5rem;
         }
     }
 
-    &__divider{
+    & ul {
+        padding: 0;
+        font-family:$raleway;
+        text-transform:uppercase;
+        font-size: 13px; 
+    }
 
-        @mixin atLarge{
-            position: absolute;
-            left: 9%;
-            top: 33%;
-            bottom:33%;
-            border-left: 1px solid white;
-        }
+    & li{
+        margin-top:2rem;
+        
+    }
 
-        @mixin atExLarge{
-            position: absolute;
-            left: 9%;
-            top: 6%;
-            bottom:33%;
-            border-left: 1px solid white;
-        }
+    & a{
+        color:#fff;
+        transition:250ms;
+    }
+
+    & a:hover{
+        color: $pastelOrange;
     }
 
     &__info{
-        font-family: $raleway;
-        text-transform:uppercase;
-        font-size: 13px;
-        margin-left: 4.5rem;
-        margin-top:-2rem;
+        margin-top:-7rem;
 
-        @mixin atSmall{
-            text-align: center;
-            margin-left:-1rem;
-        }
-
-        @mixin atMedium{
-            margin-left:17.5rem;
-        }
 
         @mixin atLarge{
-            margin-bottom:-21px;
-            margin-left:-20px;
+            margin-top: 4rem;
+            margin-right:3rem;
         }
 
         @mixin atExLarge{
-            margin-left: -2rem;
-        }
-
-
-        & li{
-            margin-bottom:2rem;
-        }
-
-        & a{
-            transition:250ms;
-            color:#fff;
-        }
-
-        & a:hover{
-            color:$pastelOrange;
+            margin-top:-2rem;
+            margin-right: 5rem;
         }
     }
 
-    &__heading{
-        font-family: $raleway;
-        text-align:center;
-        color:#fff;
-
-    }
-
-    &__heading--social{
+    &__social{
+        margin-top:-3rem;
 
         @mixin atLarge{
-            margin-left:-8rem;
+            margin-top:3rem;
+            margin-left:-3rem;
         }
 
         @mixin atExLarge{
-            margin-left:-16rem;
+            margin-left:-4rem;
         }
-       
-    }
 
-    &__heading--newsletter{
-        margin-bottom:-1.4rem;
+        & h3 {
+            @mixin atExLarge{
+                margin-left:1.5rem;
+            }
+        }
     }
 
     &__social-links{
 
         @mixin atLarge{
             display: flex;
-            margin-left:-6rem;
+
+            & li {
+                margin-top:1rem;
+                margin-left: 25px;
+            }
         }
 
         @mixin atExLarge{
             display: flex;
-            margin-left:-6rem;
-        }
+            justify-content: center;
 
-        & a {
-            @mixin atLarge{
-                margin-left:2rem;
-            }
-
-            @mixin atExLarge{
-                margin-left:3rem;
+            & li {
+                margin-top:1rem;
+                margin-left:2.1rem;
             }
         }
-        
+    }
+
+    &__newsletter{
+        margin-top: 3rem;
+
+        @mixin atExLarge{
+            margin-top: -1rem;
+        }
     }
 
     & input[type="email"]{
         font-family: $raleway;
-        padding:6px 50px 6px 25px;
-        border:2px solid black;
+        padding:4px;
+        margin-bottom:21px;
+        border:2px solid #ECECEC;
         border-radius: 4px;
         outline:none;
         width:100%;
         transition:250ms;
 
         @mixin atMedium{
-            width:90%;
-            margin-left:51px;
-        }
-
-        @mixin atLarge{
-            font-size: 14px;
+            width: 50%;
         }
 
         @mixin atExLarge{
-           width:65%;
-           margin-bottom:2rem;
+            width: 50%;
         }
 
         &:focus{
-            border:2px solid #DEA22B;
+         border:2px solid $pastelOrange;   
         }
     }
-
 
     & input[type="submit"]{
         font-family: $raleway;
         background-color: $pastelOrange;
-        color:white;
         padding: .40rem 1.2rem;
-        margin-top:22px;
         border: none;
-        width:100%;
         transition:250ms;
+        width: 100%;
 
         @mixin atMedium{
-            width:90%;
-            margin-left:51px;
+            width: 50%;
         }
 
         @mixin atExLarge{
             width: 30%;
         }
 
-        &:hover{
-            background-color: #DEA22B;
+
+        @mixin atLarge{
+            /* width: 100%; */
         }
+
+        &:hover{
+            background-color: #F0A40E;
+        }
+
     }
 
-    &__creator{
-        font-family: $raleway;
-        color:#fff;
-        font-size: 10px; 
-        text-transform:uppercase;
-        margin-left: 7.5rem;
+    &__divider{
 
-        @mixin atSmall{
-            margin-left: 15rem;
-        }
-
-        @mixin atMedium{
-            margin-left: 21rem;
-        }
-
-        
         @mixin atLarge{
-            margin-left: 28rem;
+            position: absolute;
+            left: 24%;
+            top: 33%;
+            bottom:13%;
+            border-left: 1px solid white;
         }
 
         @mixin atExLarge{
-            margin-left: 44rem;
+            position: absolute;
+            left: 50%;
+            top: 16%;
+            bottom:20%;
+            border-left: 1px solid white;
         }
     }
 
