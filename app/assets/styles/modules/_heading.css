@@ -9,4 +9,29 @@
     &--author{
         margin-bottom: -10px;
     }
+
+    &--about{
+        color:#fff;
+        font-size: 40px;
+
+        @mixin atSmall{
+            font-size: 50px;
+        }
+
+        @mixin atMedium{
+            font-size: 60px;
+        }
+
+        @mixin atLarge{
+            font-size: 80px;
+        }
+
+        @mixin atExLarge{
+            font-size: 120px;
+        }
+    }
+
+    &--about-team{
+        margin-bottom: -5px;
+    }
 }

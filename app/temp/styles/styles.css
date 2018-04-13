@@ -2194,6 +2194,33 @@ https://flickity.metafizzy.co
 .heading--author{
         margin-bottom: -10px;
     }
+.heading--about{
+        color:#fff;
+        font-size: 40px;
+    }
+@media(min-width: 576px) and (max-width: 767px){
+.heading--about{
+            font-size: 50px
+    }
+    }
+@media(min-width:768px) and (max-width: 991px){
+.heading--about{
+            font-size: 60px
+    }
+    }
+@media(min-width:992px) and (max-width: 1280px){
+.heading--about{
+            font-size: 80px
+    }
+    }
+@media(min-width:1281px){
+.heading--about{
+            font-size: 120px
+    }
+    }
+.heading--about-team{
+        margin-bottom: -5px;
+    }
 @media(min-width:992px) and (max-width: 1280px){
 .sidebar{
         margin-left: 56px
@@ -2203,4 +2230,23 @@ https://flickity.metafizzy.co
 .sidebar{
         margin-left: 127px
 }
+    }
+.about{
+    position: relative;
+}
+.about__heading{
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
+        left: 0;
+        width: 100%;
+        text-align: center;
+    }
+.about__author-name, .about__occupation{
+        font-family: 'Raleway', sans-serif;
+        text-align:center;
+    }
+.about__occupation{
+        margin-top:-12px;
     }

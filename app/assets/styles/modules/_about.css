@@ -1,0 +1,22 @@
+.about{
+    position: relative;
+
+
+    &__heading{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    &__author-name, &__occupation{
+        font-family: $raleway;
+        text-align:center;
+    }
+
+    &__occupation{
+        margin-top:-12px;
+    }
+}
