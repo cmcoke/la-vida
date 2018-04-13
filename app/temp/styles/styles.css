@@ -1779,12 +1779,26 @@ https://flickity.metafizzy.co
 .generic-content{
     font-family: 'Quicksand', sans-serif;
     line-height: 1.90;
+
 }
 .generic-content--latest-post{
         line-height: 1.60;
     }
 .generic-content--bio{
         font-size: 15px;
+    }
+.generic-content--advertise{
+        color:#fff;
+
+    }
+@media(min-width:1281px){
+.generic-content--advertise{
+            font-size: 25px
+
+    }
+    }
+.generic-content--advertise-text-content{
+        text-align: center;
     }
 .page-section{
     padding-top: 4.2rem;
@@ -2220,6 +2234,33 @@ https://flickity.metafizzy.co
     }
 .heading--about-team{
         margin-bottom: -5px;
+        
+    }
+.heading--advertise{
+        color:#fff;
+    }
+@media(min-width: 576px) and (max-width: 767px){
+.heading--advertise{
+            font-size: 50px
+    }
+    }
+@media(min-width:768px) and (max-width: 991px){
+.heading--advertise{
+            font-size: 60px
+    }
+    }
+@media(min-width:992px) and (max-width: 1280px){
+.heading--advertise{
+            font-size: 80px
+    }
+    }
+@media(min-width:1281px){
+.heading--advertise{
+            font-size: 80px
+    }
+    }
+.heading--advertise-why-us{
+       text-align: center;
     }
 @media(min-width:992px) and (max-width: 1280px){
 .sidebar{
@@ -2250,3 +2291,52 @@ https://flickity.metafizzy.co
 .about__occupation{
         margin-top:-12px;
     }
+.advertise{
+    position: relative;
+
+
+}
+.advertise__heading{
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
+        left: 0;
+        width: 100%;
+        text-align: center;  
+    }
+.advertise__text-content{
+        margin-top: 50px;
+    }
+.advertise__stats{
+        text-align: center;
+    }
+.advertise__stats p{
+            margin-top: -12px;
+            
+        }
+.advertise__contact{
+        text-align: center;
+        margin-top: 3rem;
+        margin-bottom:7rem;
+
+
+    }
+.advertise__contact a{
+            font-family: 'Raleway', sans-serif;
+            border: 1px solid black;
+            padding: .40rem 1.2rem;
+            -webkit-transition:250ms;
+            transition:250ms;
+
+        }
+.advertise__contact a:hover{
+            color:#fff;
+            background-color: black;
+        }
+.advertise__contact p {
+            margin-bottom: 2rem;
+        }
+
+
+

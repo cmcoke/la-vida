@@ -1,0 +1,53 @@
+.advertise{
+    position: relative;
+
+    &__heading{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        width: 100%;
+        text-align: center;  
+    }
+
+    &__text-content{
+        margin-top: 50px;
+    }
+
+    &__stats{
+        text-align: center;
+        
+
+        & p{
+            margin-top: -12px;
+            
+        }
+    }
+
+    &__contact{
+        text-align: center;
+        margin-top: 3rem;
+        margin-bottom:7rem;
+
+        & a{
+            font-family: $raleway;
+            border: 1px solid black;
+            padding: .40rem 1.2rem;
+            transition:250ms;
+
+        }
+
+        & a:hover{
+            color:#fff;
+            background-color: black;
+        }
+
+        & p {
+            margin-bottom: 2rem;
+        }
+
+
+    }
+
+
+}

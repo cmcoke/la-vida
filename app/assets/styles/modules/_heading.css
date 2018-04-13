@@ -33,5 +33,30 @@
 
     &--about-team{
         margin-bottom: -5px;
+        
+    }
+
+    &--advertise{
+        color:#fff;
+
+        @mixin atSmall{
+            font-size: 50px;
+        }
+
+        @mixin atMedium{
+            font-size: 60px;
+        }
+
+        @mixin atLarge{
+            font-size: 80px;
+        }
+
+        @mixin atExLarge{
+            font-size: 80px;
+        }
+    }
+
+    &--advertise-why-us{
+       text-align: center;
     }
 }

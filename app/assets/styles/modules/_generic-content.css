@@ -9,4 +9,18 @@
     &--bio{
         font-size: 15px;
     }
+
+    &--advertise{
+        color:#fff;
+
+        @mixin atExLarge{
+            font-size: 25px;
+        }
+
+    }
+
+    &--advertise-text-content{
+        text-align: center;
+    }
+
 }
