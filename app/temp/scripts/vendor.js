@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 8);
+/******/ 	return __webpack_require__(__webpack_require__.s = 9);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -81,7 +81,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
   if ( true ) {
     // AMD
     !(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-      __webpack_require__(9)
+      __webpack_require__(10)
     ], __WEBPACK_AMD_DEFINE_RESULT__ = (function( matchesSelector ) {
       return factory( window, matchesSelector );
     }).apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
@@ -325,9 +325,9 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;// Flickity main
       __webpack_require__(2),
       __webpack_require__(4),
       __webpack_require__(0),
-      __webpack_require__(10),
       __webpack_require__(11),
-      __webpack_require__(12)
+      __webpack_require__(12),
+      __webpack_require__(13)
     ], __WEBPACK_AMD_DEFINE_RESULT__ = (function( EvEmitter, getSize, utils, Cell, Slide, animatePrototype ) {
       return factory( window, EvEmitter, getSize, utils, Cell, Slide, animatePrototype );
     }).apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
@@ -1364,12 +1364,12 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     // AMD
     !(__WEBPACK_AMD_DEFINE_ARRAY__ = [
       __webpack_require__(1),
-      __webpack_require__(13),
-      __webpack_require__(15),
+      __webpack_require__(14),
       __webpack_require__(16),
       __webpack_require__(17),
       __webpack_require__(18),
-      __webpack_require__(19)
+      __webpack_require__(19),
+      __webpack_require__(20)
     ], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
 				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
 				(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
@@ -2039,7 +2039,8 @@ return TapListener;
 
 /***/ }),
 /* 7 */,
-/* 8 */
+/* 8 */,
+/* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2047,10 +2048,10 @@ return TapListener;
 
 __webpack_require__(3);
 
-__webpack_require__(20);
+__webpack_require__(21);
 
 /***/ }),
-/* 9 */
+/* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
@@ -2113,7 +2114,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
 
 
 /***/ }),
-/* 10 */
+/* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;// Flickity.Cell
@@ -2212,7 +2213,7 @@ return Cell;
 
 
 /***/ }),
-/* 11 */
+/* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;// slide
@@ -2300,7 +2301,7 @@ return Slide;
 
 
 /***/ }),
-/* 12 */
+/* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;// animate
@@ -2501,7 +2502,7 @@ return proto;
 
 
 /***/ }),
-/* 13 */
+/* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;// drag
@@ -2512,7 +2513,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;// drag
     // AMD
     !(__WEBPACK_AMD_DEFINE_ARRAY__ = [
       __webpack_require__(1),
-      __webpack_require__(14),
+      __webpack_require__(15),
       __webpack_require__(0)
     ], __WEBPACK_AMD_DEFINE_RESULT__ = (function( Flickity, Unidragger, utils ) {
       return factory( window, Flickity, Unidragger, utils );
@@ -2905,7 +2906,7 @@ return Flickity;
 
 
 /***/ }),
-/* 14 */
+/* 15 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -3191,7 +3192,7 @@ return Unidragger;
 
 
 /***/ }),
-/* 15 */
+/* 16 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;// prev/next buttons
@@ -3419,7 +3420,7 @@ return Flickity;
 
 
 /***/ }),
-/* 16 */
+/* 17 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;// page dots
@@ -3610,7 +3611,7 @@ return Flickity;
 
 
 /***/ }),
-/* 17 */
+/* 18 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;// player & autoPlay
@@ -3808,7 +3809,7 @@ return Flickity;
 
 
 /***/ }),
-/* 18 */
+/* 19 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;// add, remove cell
@@ -3976,7 +3977,7 @@ return Flickity;
 
 
 /***/ }),
-/* 19 */
+/* 20 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;// lazyload
@@ -4117,7 +4118,7 @@ return Flickity;
 
 
 /***/ }),
-/* 20 */
+/* 21 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -4134,7 +4135,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
     // AMD
     !(__WEBPACK_AMD_DEFINE_ARRAY__ = [
       __webpack_require__(3),
-      __webpack_require__(21)
+      __webpack_require__(22)
     ], __WEBPACK_AMD_DEFINE_RESULT__ = (function( Flickity, imagesLoaded ) {
       return factory( window, Flickity, imagesLoaded );
     }).apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
@@ -4187,7 +4188,7 @@ return Flickity;
 
 
 /***/ }),
-/* 21 */
+/* 22 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!

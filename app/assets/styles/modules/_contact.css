@@ -1,0 +1,84 @@
+.contact{
+    margin-top:33px;
+
+    &__info{
+        font-family: $raleway;
+        padding:0;
+        margin: 50px 0 0 0;
+
+        & span{
+            font-weight: bold;
+        }
+
+        & li {
+            margin-bottom:33px;
+        }
+    }
+
+    &__form{
+        font-family: $raleway;
+        padding:6px 50px 6px 25px;
+        margin-bottom:21px;
+        border:2px solid #ECECEC;
+        border-radius: 4px;
+        outline:none;
+        width:100%;
+        transition:250ms; 
+
+        @mixin atMedium{
+            width: 50%;
+        }
+
+        @mixin atExLarge{
+            width: 50%;
+        }
+
+        &:focus{
+            border:2px solid $pastelOrange;
+        }
+    }
+
+    &__textarea{
+        font-family: $raleway;
+        margin-bottom:21px;
+        border:2px solid #ECECEC;
+        border-radius: 4px;
+        outline:none;
+        resize: none;
+        width:100%;
+        transition:250ms;
+
+        @mixin atMedium{
+            width: 70%;
+        }
+
+        @mixin atExLarge{
+            width: 80%;
+        }
+
+        &:focus{
+            border:2px solid $pastelOrange;
+        }
+    }
+
+    & input[type="submit"]{
+        font-family: $raleway;
+        background-color: $pastelOrange;
+        padding: .40rem 1.2rem;
+        margin-top:2px;
+        margin-bottom: 2px;
+        border: none;
+        transition:250ms;
+        display: block;
+
+        &:hover{
+            color:#fff;
+        }
+    }
+}
+
+/* Google Map */
+#map{
+    height: 600px;
+    width: 100%;
+}

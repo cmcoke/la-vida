@@ -2337,6 +2337,87 @@ https://flickity.metafizzy.co
 .advertise__contact p {
             margin-bottom: 2rem;
         }
+.contact{
+    margin-top:33px;
+}
+.contact__info{
+        font-family: 'Raleway', sans-serif;
+        padding:0;
+        margin: 50px 0 0 0;
+    }
+.contact__info span{
+            font-weight: bold;
+        }
+.contact__info li {
+            margin-bottom:33px;
+        }
+.contact__form{
+        font-family: 'Raleway', sans-serif;
+        padding:6px 50px 6px 25px;
+        margin-bottom:21px;
+        border:2px solid #ECECEC;
+        border-radius: 4px;
+        outline:none;
+        width:100%;
+        -webkit-transition:250ms;
+        transition:250ms;
+    }
+@media(min-width:768px) and (max-width: 991px){
+.contact__form{
+            width: 50%
+    }
+    }
+@media(min-width:1281px){
+.contact__form{
+            width: 50%
+    }
+    }
+.contact__form:focus{
+            border:2px solid #FFC043;
+        }
+.contact__textarea{
+        font-family: 'Raleway', sans-serif;
+        margin-bottom:21px;
+        border:2px solid #ECECEC;
+        border-radius: 4px;
+        outline:none;
+        resize: none;
+        width:100%;
+        -webkit-transition:250ms;
+        transition:250ms;
+    }
+@media(min-width:768px) and (max-width: 991px){
+.contact__textarea{
+            width: 70%
+    }
+    }
+@media(min-width:1281px){
+.contact__textarea{
+            width: 80%
+    }
+    }
+.contact__textarea:focus{
+            border:2px solid #FFC043;
+        }
+.contact input[type="submit"]{
+        font-family: 'Raleway', sans-serif;
+        background-color: #FFC043;
+        padding: .40rem 1.2rem;
+        margin-top:2px;
+        margin-bottom: 2px;
+        border: none;
+        -webkit-transition:250ms;
+        transition:250ms;
+        display: block;
+    }
+.contact input[type="submit"]:hover{
+            color:#fff;
+        }
+/* Google Map */
+#map{
+    height: 600px;
+    width: 100%;
+}
 
 
 
