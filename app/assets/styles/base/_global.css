@@ -21,6 +21,15 @@ html {
     text-decoration: none;
     color: $jet;
   }
+
+  .logo{
+    font-family: $raleway;
+    text-align:center;
+  }
+
+.current{
+  color:$pastelOrange;
+}
   
   .grid {
     min-height: 300px;

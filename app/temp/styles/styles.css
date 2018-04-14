@@ -1475,6 +1475,13 @@ a {
     text-decoration: none;
     color: #343434;
   }
+.logo{
+    font-family: 'Raleway', sans-serif;
+    text-align:center;
+  }
+.current{
+  color:#FFC043;
+}
 .grid {
     min-height: 300px;
   }
@@ -1483,61 +1490,146 @@ a {
       height: 600px
   }
     }
-.site-header__logo{
+.site-menu {
+    position: fixed;
+    top: -1em;
+    right: 0;
+    z-index: 1;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    -webkit-transition: -webkit-transform ease-in 250ms;
+    transition: -webkit-transform ease-in 250ms;
+    transition: transform ease-in 250ms;
+    transition: transform ease-in 250ms, -webkit-transform ease-in 250ms;
+
+}
+@media(min-width:992px) and (max-width: 1280px){
+.site-menu {
+        position: static;
+        -webkit-transform: none;
+                transform: none
+
+}
+    }
+@media(min-width:1281px){
+.site-menu {
+        position: static;
+        -webkit-transform: none;
+                transform: none
+
+}
+    }
+.site-menu ul{
+        background-color:black;
+        padding:15px;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+        height: 100vh;
+    }
+@media(min-width:992px) and (max-width: 1280px){
+.site-menu ul{
+            background-color: inherit;
+            padding: 0;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: row;
+                    flex-direction: row;
+            -ms-flex-pack: distribute;
+                justify-content: space-around;
+            height: auto
+    }
+    }
+@media(min-width:1281px){
+.site-menu ul{
+            background-color: inherit;
+            padding: 0;
+            margin-top:-1rem;
+            margin-bottom: 2rem;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: row;
+                    flex-direction: row;
+            -ms-flex-pack: distribute;
+                justify-content: space-around;
+            height: auto
+    }
+    }
+.site-menu li{
+        -webkit-box-flex: 1;
+            -ms-flex: 1 1 auto;
+                flex: 1 1 auto;
+        border-bottom: 1px solid #333;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+@media(min-width:992px) and (max-width: 1280px){
+.site-menu li{
+            -webkit-box-flex:0;
+                -ms-flex:none;
+                    flex:none;
+            border-bottom:none
+    }
+    }
+@media(min-width:1281px){
+.site-menu li{
+            -webkit-box-flex:0;
+                -ms-flex:none;
+                    flex:none;
+            border-bottom:none
+    }
+    }
+.site-menu a{
+        color: #fff;
+        font-family: 'Raleway', sans-serif;
+        text-transform: uppercase;
+        font-size: 0.8125rem;
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         -webkit-box-pack: center;
             -ms-flex-pack: center;
                 justify-content: center;
-        font-family: 'Raleway', sans-serif;
-        font-size: 2.3125rem;
-        margin-bottom:0;
-    }
-@media(max-width: 575px){
-.site-header__logo{
-            margin-top: 6px
-    }
-    }
-@media(min-width: 576px) and (max-width: 767px){
-.site-header__logo{
-            margin-top: -1px
-    }
-    }
-@media(min-width:768px) and (max-width: 991px){
-.site-header__logo{
-            margin-top: -5px
-    }
-    }
-@media(min-width:992px) and (max-width: 1280px){
-.site-header__logo{
-            margin-top: 3px
-    }
-    }
-.site-header__menu{
-        margin-left: -57px;
-    }
-.site-header__menu ul{
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-pack: distribute;
-            justify-content: space-around;
-        text-transform:uppercase;
-        font-family: 'Quicksand', sans-serif;
-        margin-top:0;
-        
-    }
-.site-header a{
         -webkit-transition:250ms;
         transition:250ms;
     }
-.site-header__menu a:hover{
-        color:#FFC043;
-        
+@media(min-width:992px) and (max-width: 1280px){
+.site-menu a{
+            font-size: 1rem;
+            -ms-flex-preferred-size: none;
+                flex-basis: none;
+            color: #000
     }
-.site-header__current{
-        color:#FFC043;
+    }
+@media(min-width:1281px){
+.site-menu a{
+            font-size: 1rem;
+            -ms-flex-preferred-size: none;
+                flex-basis: none;
+            color: #000
+    }
+    }
+.site-menu .current{
+        color: #FFC043;  
+    }
+.site-menu a:hover{
+        color: #FFC043;
+    }
+.site-menu--is-open{
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
     }
 /*! Flickity v2.1.1
 https://flickity.metafizzy.co
@@ -2398,6 +2490,69 @@ https://flickity.metafizzy.co
     height: 600px;
     width: 100%;
 }
+.mobile-menu-button{
+    display: block;
+    padding: 1em;
+    position: fixed;
+    top:0.6em;
+    right:0;
+    z-index: 3;
+    cursor: pointer;
+    
+
+}
+@media(min-width:992px) and (max-width: 1280px){
+.mobile-menu-button{
+        display: none
+    
+
+}
+    }
+@media(min-width:1281px){
+.mobile-menu-button{
+        display: none
+    
+
+}
+    }
+.mobile-menu-button__hamburger, .mobile-menu-button__hamburger::before, .mobile-menu-button__hamburger::after{
+        content: '';
+        display: block;
+        width: 2em;
+        height: 3px;
+        background:#FFC043;
+        -webkit-transition: all ease-in-out 250ms;
+        transition: all ease-in-out 250ms;
+      }
+@media(min-width:992px) and (max-width: 1280px){
+.mobile-menu-button__hamburger, .mobile-menu-button__hamburger::before, .mobile-menu-button__hamburger::after{
+            display: none
+      }
+    }
+@media(min-width:1281px){
+.mobile-menu-button__hamburger, .mobile-menu-button__hamburger::before, .mobile-menu-button__hamburger::after{
+            display: none
+      }
+    }
+.mobile-menu-button__hamburger::before{
+        -webkit-transform: translateY(-6px);
+                transform: translateY(-6px);
+      }
+.mobile-menu-button__hamburger::after{
+        -webkit-transform: translateY(3px);
+                transform: translateY(3px);
+      }
+.mobile-menu-button__hamburger.site-menu--is-open{
+        -webkit-transform: rotate(45deg);
+                transform: rotate(45deg);
+      }
+.mobile-menu-button__hamburger.site-menu--is-open::after{
+          -webkit-transform: rotate(-90deg);
+                  transform: rotate(-90deg);
+        }
+.mobile-menu-button__hamburger.site-menu--is-open::before{
+          display: none;
+        }
 
 
 

@@ -1,0 +1,99 @@
+.site-menu {
+    position: fixed;
+    top: -1em;
+    right: 0;
+    z-index: 1;
+    transform: translateX(100%);
+    transition: transform ease-in 250ms;
+
+    @mixin atLarge {
+        position: static;
+        transform: none;
+    }
+
+    @mixin atExLarge {
+        position: static;
+        transform: none;
+    }
+
+    ul{
+        background-color:black;
+        padding:15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 100vh;
+
+        @mixin atLarge{
+            background-color: inherit;
+            padding: 0;
+            flex-direction: row;
+            justify-content: space-around;
+            height: auto;
+        }
+
+        @mixin atExLarge{
+            background-color: inherit;
+            padding: 0;
+            margin-top:-1rem;
+            margin-bottom: 2rem;
+            flex-direction: row;
+            justify-content: space-around;
+            height: auto;
+        }
+    }
+
+    li{
+        flex: 1 1 auto;
+        border-bottom: 1px solid #333;
+        display: flex;
+
+        @mixin atLarge{
+            flex:none;
+            border-bottom:none;
+           
+        }
+
+        @mixin atExLarge{
+            flex:none;
+            border-bottom:none;
+        }
+    }
+
+    a{
+        color: #fff;
+        font-family: $raleway;
+        text-transform: uppercase;
+        font-size: 0.8125rem;
+        flex-basis: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition:250ms;
+
+        @mixin atLarge{
+            font-size: 1rem;
+            flex-basis: none;
+            color: #000;
+        }
+
+        @mixin atExLarge{
+            font-size: 1rem;
+            flex-basis: none;
+            color: #000;
+        }
+    }
+
+    & .current{
+        color: $pastelOrange;  
+    }
+
+    a:hover{
+        color: $pastelOrange;
+    }
+
+    &--is-open{
+        transform: translateX(0);
+    }
+
+}
