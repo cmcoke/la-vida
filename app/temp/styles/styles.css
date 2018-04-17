@@ -1482,6 +1482,9 @@ a {
 .current{
   color:#FFC043;
 }
+.tab{
+  margin-left: -1rem;
+}
 .grid {
     min-height: 300px;
   }
@@ -1837,9 +1840,7 @@ https://flickity.metafizzy.co
             color:#FF595E;
         }
 .article__heading--sidebar{
-        margin-top: 2px;
         font-size: 12px;
-        line-height: 1.50;
     }
 .article__heading--headlines{
         color:#fff;
@@ -1973,25 +1974,6 @@ https://flickity.metafizzy.co
 .overlay--subpost:hover{
             color:  #FF595E;
         }
-.content{
-
-
-
-    /* &__left{
-        position: fixed;
-        top:0;
-        right: 0;
-        height: auto;
-        z-index: 1;
-        overflow-x: hidden;
-    } */
-}
-.content__top-left{
-        margin-bottom: 5rem;
-    }
-.content__right{
-        margin-left: -12px;
-    }
 .site-footer{
     text-align: center;
     background-color:black;
@@ -2334,15 +2316,30 @@ https://flickity.metafizzy.co
         color:#fff;
         font-size: 22px;
     }
+.heading--sidebar{
+        text-transform: uppercase;
+        font-size: 14px;
+    }
+.sidebar{
+    padding: 30px;
+    border: 1px solid #eee;
+
+}
 @media(min-width:992px) and (max-width: 1280px){
 .sidebar{
-        margin-left: 56px
+        padding:8px
+
 }
     }
 @media(min-width:1281px){
 .sidebar{
-        margin-left: 127px
+        margin-left: 4.4rem;
+        width: 80%
+
 }
+    }
+.sidebar__top{
+        margin-bottom: 72px;
     }
 .about{
     position: relative;
@@ -2490,6 +2487,45 @@ https://flickity.metafizzy.co
     height: 600px;
     width: 100%;
 }
+.tabs-nav{
+    margin-top: 5rem;
+    padding: 0;
+
+
+}
+@media(min-width: 576px) and (max-width: 767px){
+.tabs-nav{
+        margin-top: 5rem;
+        margin-bottom: 5rem
+
+
+}
+    }
+.tabs-nav li {
+        display: inline-block;
+    }
+.tabs-nav a{
+        display: block;
+        background-color: white;
+        border: 1px solid black;
+        font-size: 18px;
+        font-family: 'Raleway', sans-serif;
+        text-align:center;
+        width:35px;
+        height: 35px;
+        line-height:35px;
+        -webkit-transition: 250ms;
+        transition: 250ms;
+        margin-top:1rem;
+    }
+.tabs-nav a.current{
+        background-color: black;
+        color: #fff;
+    }
+.tabs-nav a:hover{
+        background-color: black;
+        color: #fff;
+    }
 .mobile-menu-button{
     display: block;
     padding: 1em;
@@ -2553,6 +2589,8 @@ https://flickity.metafizzy.co
 .mobile-menu-button__hamburger.site-menu--is-open::before{
           display: none;
         }
+
+
 
 
 

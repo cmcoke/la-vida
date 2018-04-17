@@ -1,10 +1,20 @@
 .sidebar{
+    padding: 30px;
+    border: 1px solid #eee;
     
+
     @mixin atLarge{
-        margin-left: 56px;
+        padding:8px;
     }
 
     @mixin atExLarge{
-        margin-left: 127px;
+        margin-left: 4.4rem;
+        width: 80%;
     }
+
+    &__top{
+        margin-bottom: 72px;
+    }
+
 }
+

@@ -1,0 +1,39 @@
+.tabs-nav{
+    margin-top: 5rem;
+    padding: 0;
+
+    @mixin atSmall{
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+    }
+
+    & li {
+        display: inline-block;
+    }
+
+    & a{
+        display: block;
+        background-color: white;
+        border: 1px solid black;
+        font-size: 18px;
+        font-family: $raleway;
+        text-align:center;
+        width:35px;
+        height: 35px;
+        line-height:35px;
+        transition: 250ms;
+        margin-top:1rem;
+    }
+
+    & a.current{
+        background-color: black;
+        color: #fff;
+    }
+    
+    & a:hover{
+        background-color: black;
+        color: #fff;
+    }
+
+
+}

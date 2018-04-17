@@ -14,7 +14,6 @@
 @import "modules/_post-section";
 @import "modules/_page-number";
 @import "modules/_overlay";
-@import "modules/_content";
 @import "modules/_site-footer";
 @import "modules/_main-article";
 @import "modules/_heading";
@@ -22,7 +21,10 @@
 @import "modules/_about";
 @import "modules/_advertise";
 @import "modules/_contact";
+@import "modules/_tabs-nav";
 @import "modules/_mobile-menu-button";
+
+
 
 
 
