@@ -8,4 +8,21 @@
     &--footer{
         padding-top: .2rem;
     }
+
+    &--article{
+      padding-top: 0.2rem;
+      margin-top: -1rem;
+
+      @mixin atMedium{
+        margin-top: -2rem;
+      }
+
+      @mixin atLarge{
+        margin-top: 1rem;
+      }
+
+      @mixin atExLarge{
+        margin-top: 1rem;
+      }
+    }
 }

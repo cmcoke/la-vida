@@ -1,16 +1,16 @@
 .main-article{
-    
+    font-family: $quest;
+    text-transform:uppercase;
     display: flex;
     justify-content: center;
+    margin-top: -2rem;
 
 
     &__right{
         position: relative;
-      
 
         & a{
             color:#fff;
-            font-family: $raleway;
             font-size: 22px;
 
             @mixin atExLarge{
@@ -20,17 +20,16 @@
     }
 
     &__left{
+        margin-top: -30px;
 
-        @mixin atExSmall{
-            margin-top: -30px;
-        }
 
         @mixin atLarge{
-            margin-top: 4px;
+            margin-top: 1px;
             margin-left:-22px;
         }
-        
+
         @mixin atExLarge{
+            margin-top: 1px;
             margin-left:-24px;
         }
     }
@@ -41,7 +40,6 @@
 
         & a{
             color:#fff;
-            font-family: $raleway;
             font-size: 22px;
 
             @mixin atExLarge{
@@ -50,21 +48,20 @@
         }
     }
 
-    
+
     &__bottom-left{
         position: relative;
 
         @mixin atLarge{
             margin-top:-11px;
         }
-        
+
         @mixin atExLarge{
             margin-top:-11px;
         }
 
         & a{
             color:#fff;
-            font-family: $raleway;
             font-size: 22px;
 
             @mixin atExLarge{

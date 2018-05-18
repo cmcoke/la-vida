@@ -1,9 +1,9 @@
 .tabs-nav{
-    margin-top: 5rem;
+    margin-top: 1rem;
     padding: 0;
 
     @mixin atSmall{
-        margin-top: 5rem;
+        margin-top: 6rem;
         margin-bottom: 5rem;
     }
 
@@ -16,7 +16,7 @@
         background-color: white;
         border: 1px solid black;
         font-size: 18px;
-        font-family: $raleway;
+        font-family: $quest;
         text-align:center;
         width:35px;
         height: 35px;
@@ -29,7 +29,7 @@
         background-color: black;
         color: #fff;
     }
-    
+
     & a:hover{
         background-color: black;
         color: #fff;

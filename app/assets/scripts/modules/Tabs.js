@@ -8,29 +8,21 @@ class Tabs{
     }
 
     events(){
-        this.tabContent.hide();
-        this.tabNav.find('a').on('click', function(e){
-            e.preventDefault();
-            $('.tabs-nav').find('.current').removeClass('current');
-            $(this).addClass('current');
-            
-            var newTab = $(this.hash);
-            var newHeight = newTab.height();
-            var container = $(".tab-content");
+        $('.tab').hide();
+        $('.tabs-nav a').bind('click', function(e){
+           $('.tabs-nav a.current').removeClass('current');
+           $('.tab:visible').fadeOut("fast");
+           $(this.hash).fadeIn("slow");
+           $(this).addClass('current');
+           e.preventDefault();
+       }).filter(':first').click();
 
-            newTab.siblings(":visible").fadeOut('fast');
-            container.animate({'height' : newHeight}, 300, function(){
-                newTab.fadeIn('fast');
-              });
-
-            
-        }).first().click();
-
-        $('.tab-link').click(function(){
+       $('.tab-link').click(function(){
             $('html,body').animate({
                 scrollTop: $('#top').offset().top
-            }, 400);
+            }, 600);
         });
+
     }
 
 
@@ -40,13 +32,3 @@ class Tabs{
 
 
 export default Tabs;
-
-
-
-
-
-
-
-
-
-

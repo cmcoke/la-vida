@@ -1,30 +1,52 @@
 html {
     box-sizing: border-box;
   }
-  
+
   *,
   *:before,
   *:after {
     box-sizing: inherit;
   }
-  
+
   img {
     max-width: 100%;
     height: auto;
   }
-  
+
   ul {
     list-style: none;
   }
-  
+
   a {
     text-decoration: none;
     color: $jet;
   }
 
   .logo{
-    font-family: $raleway;
     text-align:center;
+    font-family: $raleway;
+    font-size: 2.0625rem;
+    margin-top: 0.125rem;
+
+    @mixin atSmall{
+      font-size: 2.5rem;
+    }
+
+    @mixin atMedium{
+      font-size: 3.75rem;
+      margin-top: 1.125rem;
+    }
+
+    @mixin atLarge{
+      font-size: 2.8125rem;
+      margin-top: 1.375rem;
+    }
+
+    @mixin atExLarge{
+      font-size: 2.8125rem;
+      margin-top: 1.75rem;
+    }
+
   }
 
 .current{
@@ -34,12 +56,10 @@ html {
 .tab{
   margin-left: -1rem;
 }
-  
+
   .grid {
     min-height: 300px;
     @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
       height: 600px;
     }
   }
-
-

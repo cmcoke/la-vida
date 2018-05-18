@@ -192,17 +192,16 @@ window.initMap = function() {
         }
     ]
     });
-  
+
     var marker = new google.maps.Marker({
       position: {lat:40.758896, lng: -73.985130},
       map:map,
       icon: 'http://maps.google.com/mapfiles/ms/icons/yellow-dot.png'
     });
-  
+
   }
-  
-  
-  
-  
+
+
+
+
   export default initMap;
-  

@@ -2,7 +2,7 @@
     margin-top:33px;
 
     &__info{
-        font-family: $raleway;
+        font-family: $quest;
         padding:0;
         margin: 50px 0 0 0;
 
@@ -16,14 +16,14 @@
     }
 
     &__form{
-        font-family: $raleway;
+        font-family: $quest;
         padding:6px 50px 6px 25px;
         margin-bottom:21px;
         border:2px solid #ECECEC;
         border-radius: 4px;
         outline:none;
         width:100%;
-        transition:250ms; 
+        transition:250ms;
 
         @mixin atMedium{
             width: 50%;
@@ -39,7 +39,7 @@
     }
 
     &__textarea{
-        font-family: $raleway;
+        font-family: $quest;
         margin-bottom:21px;
         border:2px solid #ECECEC;
         border-radius: 4px;
@@ -62,7 +62,7 @@
     }
 
     & input[type="submit"]{
-        font-family: $raleway;
+        /* font-family: $raleway; */
         background-color: $pastelOrange;
         padding: .40rem 1.2rem;
         margin-top:2px;

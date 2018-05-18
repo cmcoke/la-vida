@@ -1,5 +1,5 @@
 .post-section{
-    font-family: $raleway;
+    font-family: $quicksand;
     text-transform:uppercase;
 
   &::after{
@@ -35,4 +35,9 @@
       visibility: hidden;
     }
   }
+
+  &--article{
+    margin-left: 12px;
+  }
+
 }

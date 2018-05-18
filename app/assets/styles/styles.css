@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Quicksand|Raleway');
+@import url('https://fonts.googleapis.com/css?family=NTR|Questrial|Quicksand|Raleway');
 @import "normalize.css";
 @import "reflex-grid";
 @import "base/_variables";
@@ -12,7 +12,6 @@
 @import "modules/_generic-content";
 @import "modules/_page-section";
 @import "modules/_post-section";
-@import "modules/_page-number";
 @import "modules/_overlay";
 @import "modules/_site-footer";
 @import "modules/_main-article";
@@ -23,8 +22,3 @@
 @import "modules/_contact";
 @import "modules/_tabs-nav";
 @import "modules/_mobile-menu-button";
-
-
-
-
-

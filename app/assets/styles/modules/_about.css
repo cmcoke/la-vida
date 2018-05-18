@@ -12,7 +12,7 @@
     }
 
     &__author-name, &__occupation{
-        font-family: $raleway;
+        font-family: $quest;
         text-align:center;
     }
 

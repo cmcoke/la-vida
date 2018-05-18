@@ -1,31 +1,100 @@
 .generic-content{
     font-family: $quicksand;
     line-height: 1.90;
-    
+
     &--latest-post{
         line-height: 1.60;
     }
 
     &--bio{
-        font-size: 15px;
+        font-size: 0.9375rem;
     }
 
     &--advertise{
         color:#fff;
+        font-size: 1.125rem;
+
+        @mixin atMedium{
+          font-size: 1.375rem;
+        }
+
+        @mixin atLarge{
+          font-size: 1.6875rem;
+        }
 
         @mixin atExLarge{
-            font-size: 25px;
+            font-size: 1.875rem;
         }
 
     }
 
     &--advertise-text-content{
         text-align: center;
+        font-size: 1.125rem;
+
+        @mixin atSmall{
+          font-size: 1.25rem;
+        }
+
+        @mixin atMedium{
+          font-size: 1.5625rem;
+        }
+
+        @mixin atExLarge{
+          font-size: 1.5625rem;
+        }
+    }
+
+    &--stats-info{
+      font-size: 1.125rem;
+
+      @mixin atSmall{
+        font-size: 1.25rem;
+      }
+
+      @mixin atMedium{
+        font-size: 1.5625rem;
+      }
+
+      @mixin atLarge{
+        font-size: 1.25rem;
+      }
+
+      @mixin atExLarge{
+        font-size: 1.5625rem;
+      }
+
+    }
+
+    &--contact{
+      font-size: 1.125rem;
+
+      @mixin atSmall{
+        font-size: 1.1875rem;
+      }
+
+      @mixin atMedium{
+        font-size: 1.375rem;
+      }
+
+      @mixin atLarge{
+        font-size: 1.375rem;
+      }
+
+      @mixin atExLarge{
+        font-size: 1.5625rem;
+      }
+
+
+
+
+
+
     }
 
     &--site-footer{
         color:#fff;
-        font-size: 12px;
+        font-size: 0.75rem;
     }
 
 }

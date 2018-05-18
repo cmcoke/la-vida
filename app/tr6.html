@@ -51,14 +51,20 @@
     </div>
 
 
-    <section class="page-section">
+    <section class="page-section page-section--article">
         <div class="container">
             <div class="article__header">
                 <a href="travel.html" class="article__type">travel</a>
                 <h1 class=" heading--article">Climbing Aiguille du midi</h1>
-                <p class="article__author">Victoria Heathn - March 06, 2018</p>
+                <p class="article__author">By Victoria Heathn</p>
             </div>
-            <img src="assets/images/tr6--desktop.jpg" alt="" class="flex-img">
+            <picture>
+                <source srcset="assets/images/tr6-hero--desktop.jpg 1700w" media="(min-width: 1038px)">
+                <source srcset="assets/images/tr6-hero-tablet--landscape.jpg 1000w" media="(min-width: 1024px)">
+                <source srcset="assets/images/tr6-hero-tablet--portrait.jpg 750w" media="(min-width: 768px)">
+                <source srcset="assets/images/tr6-hero-mobile--landscape.jpg 550w" media="(min-width: 640px)">
+                <img class="lazyload flex-img" src="assets/images/tr6-hero-mobile--portrait.jpg" alt="">
+            </picture>
         </div>
     </section>
 
@@ -107,12 +113,18 @@
 
                 <div class="grid justify-center">
                     <div class="article__author-bio">
-                        <div class="col-sm-12 col-md-2">
-                            <img src="assets/images/t4.jpg" alt="" class="flex-img article__author-img">
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xlg-2">
+                            <picture>
+                                <source data-srcset="assets/images/aa4-desktop.jpg 400w" media="(min-width: 1038px)">
+                                <source data-srcset="assets/images/aa4-tablet--landscape.jpg 350w" media="(min-width: 1024px)">
+                                <source data-srcset="assets/images/aa4-tablet--portrait.jpg 500w" media="(min-width: 768px)">
+                                <source data-srcset="assets/images/aa4-mobile--landscape.jpg 550w" media="(min-width: 640px)">
+                                <img class="lazyload flex-img article__author-img" data-src="assets/images/aa4-mobile--portrait.jpg" alt="">
+                            </picture>
                         </div>
-                        <div class="col-sm-12 col-md-7">
+                        <div class="col-xs-12 col-sm-6 col-md-7 col-lg-7 col-xlg-7">
                             <h4 class="heading heading--author">Victoria Heathn</h4>
-                            <p class="generic-content generic-content--bio ">
+                            <p class="generic-content  ">
                                 Mauris tempor turpis ut est viverra tristique. Fusce dapibus scelerisque neque. Quisque gravida ligula sit amet metus porta,
                                 in fringilla risus rutrum. Cras id nisl at diam ultrices finibus. Etiam tortor enim, varius
                                 ac nibh vel, congue eleifend lorem. Nulla facilisi. Curabitur elementum rhoncus nisi et venenatis.
@@ -121,7 +133,6 @@
                             </p>
                         </div>
                     </div>
-
                 </div>
 
             </div>
@@ -129,109 +140,155 @@
             <!-- Sidebar -->
             <aside class="col-xs-12  col-md-3">
 
-                <!-- Sidebar Top Content -->
-                <div class="sidebar sidebar__top">
-                    <h4 class="heading heading--sidebar">Editor&#39;s Pick</h4>
-                    <div class="grid align-center">
+              <!-- Sidebar Top Content -->
+              <div class="sidebar sidebar__top">
+                <h4 class="heading heading--sidebar">Editor&#39;s Pick</h4>
+                <div class="grid align-center">
 
-                        <div class="col-xs-12 col-sm-2 col-md-5 col-lg-5 col-xlg-4 overlay">
-                            <a href="ad2.html">
-                                <img class="flex-img" src="assets/images/ep1.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class="col-xs-12 col-sm-9 col-md-7 col-lg-7 col-xlg-7 ">
-                            <h4 class="article__heading--sidebar">
-                                <a href="ad2.html" class="article__heading  ">Finding inspiration</a>
-                            </h4>
-                        </div>
+                  <div class="col-xs-12 col-sm-2 col-md-5 col-lg-5 col-xlg-4 overlay">
+                    <a href="ad2.html">
+                      <picture>
+                        <source data-srcset="assets/images/d&a2-ep--desktop.jpg 850w" media="(min-width: 1380px)">
+                        <source data-srcset="assets/images/d&a2-ep-tablet--landscape.jpg 650w" media="(min-width: 1024px)">
+                        <source data-srcset="assets/images/d&a2-ep-tablet--portrait.jpg 600w" media="(min-width: 768px)">
+                        <source data-srcset="assets/images/d&a2-ep-mobile--landscape.jpg 500w" media="(min-width: 640px)">
+                        <img class="lazyload flex-img" data-src="assets/images/d&a2-ep-mobile--portrait.jpg" alt="">
+                      </picture>
+                    </a>
+                  </div>
+                  <div class="col-xs-12 col-sm-9 col-md-7 col-lg-7 col-xlg-7 ">
+                    <h4 class="article__heading--sidebar">
+                                      <a href="ad2.html">Finding inspiration</a>
+                                  </h4>
+                  </div>
 
-                        <div class="col-xs-12 col-sm-2 col-md-5 col-lg-5 col-xlg-4 overlay">
-                            <a href="fas5.html">
-                                <img class="flex-img" src="assets/images/ep2.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class="col-xs-12 col-sm-9 col-md-7 col-lg-7 col-xlg-7">
-                            <h4 class="article__heading--sidebar">
-                                <a href="fas5.html" class="article__heading ">Shopping for sneakers</a>
-                            </h4>
-                        </div>
+                  <div class="col-xs-12 col-sm-2 col-md-5 col-lg-5 col-xlg-4 overlay">
+                    <a href="fas5.html">
+                      <picture>
+                        <source data-srcset="assets/images/fas5-ep--desktop.jpg 850w" media="(min-width: 1380px)">
+                        <source data-srcset="assets/images/fas5-ep-tablet--landscape.jpg 650w" media="(min-width: 1024px)">
+                        <source data-srcset="assets/images/fas5-ep-tablet--portrait.jpg 600w" media="(min-width: 768px)">
+                        <source data-srcset="assets/images/fas5-ep-mobile--landscape.jpg 500w" media="(min-width: 640px)">
+                        <img class="lazyload flex-img" data-src="assets/images/fas5-ep-mobile--portrait.jpg" alt="">
+                      </picture>
+                    </a>
+                  </div>
+                  <div class="col-xs-12 col-sm-9 col-md-7 col-lg-7 col-xlg-7">
+                    <h4 class="article__heading--sidebar">
+                                      <a href="fas5.html">Shopping for sneakers</a>
+                                  </h4>
+                  </div>
 
-                        <div class="col-xs-12 col-sm-2 col-md-5 col-lg-5 col-xlg-4 overlay">
-                            <a href="tr7.html">
-                                <img class="flex-img" src="assets/images/ep3.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class="col-xs-12 col-sm-9 col-md-7 col-lg-7 col-xlg-7">
-                            <h4 class="article__heading--sidebar">
-                                <a href="tr7.html" class="article__heading ">Have summer travel plans&#63;</a>
-                            </h4>
-                        </div>
+                  <div class="col-xs-12 col-sm-2 col-md-5 col-lg-5 col-xlg-4 overlay">
+                    <a href="tr7.html">
+                      <picture>
+                        <source data-srcset="assets/images/tr7-ep--desktop.jpg 850w" media="(min-width: 1380px)">
+                        <source data-srcset="assets/images/tr7-ep-tablet--landscape.jpg 650w" media="(min-width: 1024px)">
+                        <source data-srcset="assets/images/tr7-ep-tablet--portrait.jpg 600w" media="(min-width: 768px)">
+                        <source data-srcset="assets/images/tr7-ep-mobile--landscape.jpg 500w" media="(min-width: 640px)">
+                        <img class="lazyload flex-img" data-src="assets/images/tr7-ep-mobile--portrait.jpg" alt="">
+                      </picture>
+                    </a>
+                  </div>
+                  <div class="col-xs-12 col-sm-9 col-md-7 col-lg-7 col-xlg-7">
+                    <h4 class="article__heading--sidebar">
+                                      <a href="tr7.html">Have summer travel plans&#63;</a>
+                                  </h4>
+                  </div>
 
-                        <div class="col-xs-12 col-sm-2 col-md-5 col-lg-5 col-xlg-4 overlay">
-                            <a href="ad7.html">
-                                <img class="flex-img" src="assets/images/ep4.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class="col-xs-12 col-sm-9 col-md-7 col-lg-7 col-xlg-7">
-                            <h4 class="article__heading--sidebar">
-                                <a href="ad7.html" class="article__heading ">The history of graffiti</a>
-                            </h4>
-                        </div>
+                  <div class="col-xs-12 col-sm-2 col-md-5 col-lg-5 col-xlg-4 overlay">
+                    <a href="ad7.html">
+                      <picture>
+                        <source data-srcset="assets/images/d&a7-ep--desktop.jpg 850w" media="(min-width: 1380px)">
+                        <source data-srcset="assets/images/d&a7-ep-tablet--landscape.jpg 650w" media="(min-width: 1024px)">
+                        <source data-srcset="assets/images/d&a7-ep-tablet--portrait.jpg 600w" media="(min-width: 768px)">
+                        <source data-srcset="assets/images/d&a7-ep-mobile--landscape.jpg 500w" media="(min-width: 640px)">
+                        <img class="lazyload flex-img" data-src="assets/images/d&a7-ep-mobile--portrait.jpg" alt="">
+                      </picture>
+                    </a>
+                  </div>
+                  <div class="col-xs-12 col-sm-9 col-md-7 col-lg-7 col-xlg-7">
+                    <h4 class="article__heading--sidebar">
+                                      <a href="ad7.html">The history of graffiti</a>
+                                  </h4>
+                  </div>
 
-                    </div>
                 </div>
+              </div>
 
-                <!-- Sidebar Bottom Content -->
-                <div class="sidebar sidebar___bottom">
-                    <h4 class="heading heading--sidebar">Popular Posts</h4>
-                    <div class="grid align-center">
+              <!-- Sidebar Bottom Content -->
+              <div class="sidebar sidebar___bottom">
+                <h4 class="heading heading--sidebar">Most Viewed</h4>
+                <div class="grid align-center">
 
-                        <div class="col-xs-12 col-sm-2 col-md-5 col-lg-5 col-xlg-4 overlay">
-                            <a href="fas8.html">
-                                <img class="flex-img" src="assets/images/mr1.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class="col-xs-12 col-sm-9 col-md-7 col-lg-7 col-xlg-7">
-                            <h4 class="article__heading--sidebar">
-                                <a href="fas8.html" class="article__heading ">Most fashionable cities, ranked</a>
-                            </h4>
-                        </div>
+                  <div class="col-xs-12 col-sm-2 col-md-5 col-lg-5 col-xlg-4 overlay">
+                    <a href="fas8.html">
+                      <picture>
+                        <source data-srcset="assets/images/fas8-pp--desktop.jpg 850w" media="(min-width: 1380px)">
+                        <source data-srcset="assets/images/fas8-pp-tablet--landscape.jpg 650w" media="(min-width: 1024px)">
+                        <source data-srcset="assets/images/fas8-pp-tablet--portrait.jpg 600w" media="(min-width: 768px)">
+                        <source data-srcset="assets/images/fas8-pp-mobile--landscape.jpg 500w" media="(min-width: 640px)">
+                        <img class="lazyload flex-img" data-src="assets/images/fas8-pp-mobile--portrait.jpg" alt="">
+                      </picture>
+                    </a>
+                  </div>
+                  <div class="col-xs-12 col-sm-9 col-md-7 col-lg-7 col-xlg-7">
+                    <h4 class="article__heading--sidebar">
+                                      <a href="fas8.html">Most fashionable cities, ranked</a>
+                                  </h4>
+                  </div>
 
-                        <div class="col-xs-12 col-sm-2 col-md-5 col-lg-5 col-xlg-4 overlay">
-                            <a href="tr4.html">
-                                <img class="flex-img" src="assets/images/mr2.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class="col-xs-12 col-sm-9 col-md-7 col-lg-7 col-xlg-7">
-                            <h4 class="article__heading--sidebar">
-                                <a href="tr4.html" class="article__heading ">I&#39;m going to cali</a>
-                            </h4>
-                        </div>
+                  <div class="col-xs-12 col-sm-2 col-md-5 col-lg-5 col-xlg-4 overlay">
+                    <a href="tr4.html">
+                      <picture>
+                        <source data-srcset="assets/images/tr4-pp--desktop.jpg 850w" media="(min-width: 1380px)">
+                        <source data-srcset="assets/images/tr4-pp-tablet--landscape.jpg 650w" media="(min-width: 1024px)">
+                        <source data-srcset="assets/images/tr4-pp-tablet--portrait.jpg 600w" media="(min-width: 768px)">
+                        <source data-srcset="assets/images/tr4-pp-mobile--landscape.jpg 500w" media="(min-width: 640px)">
+                        <img class="lazyload flex-img" data-src="assets/images/tr4-pp-mobile--portrait.jpg" alt="">
+                      </picture>
+                    </a>
+                  </div>
+                  <div class="col-xs-12 col-sm-9 col-md-7 col-lg-7 col-xlg-7">
+                    <h4 class="article__heading--sidebar">
+                                      <a href="tr4.html">I&#39;m going to cali</a>
+                                  </h4>
+                  </div>
 
-                        <div class="col-xs-12 col-sm-2 col-md-5 col-lg-5 col-xlg-4 overlay">
-                            <a href="ls4.html">
-                                <img class="flex-img" src="assets/images/mr3.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class="col-xs-12 col-sm-9 col-md-7 col-lg-7 col-xlg-7">
-                            <h4 class="article__heading--sidebar">
-                                <a href="ls4.html" class="article__heading ">Planning the perfect first date</a>
-                            </h4>
-                        </div>
+                  <div class="col-xs-12 col-sm-2 col-md-5 col-lg-5 col-xlg-4 overlay">
+                    <a href="ls4.html">
+                      <picture>
+                        <source data-srcset="assets/images/ls4-pp--desktop.jpg 850w" media="(min-width: 1380px)">
+                        <source data-srcset="assets/images/ls4-pp-tablet--landscape.jpg 650w" media="(min-width: 1024px)">
+                        <source data-srcset="assets/images/ls4-pp-tablet--portrait.jpg 600w" media="(min-width: 768px)">
+                        <source data-srcset="assets/images/ls4-pp-mobile--landscape.jpg 500w" media="(min-width: 640px)">
+                        <img class="lazyload flex-img" data-src="assets/images/ls4-pp-mobile--portrait.jpg" alt="">
+                      </picture>
+                    </a>
+                  </div>
+                  <div class="col-xs-12 col-sm-9 col-md-7 col-lg-7 col-xlg-7">
+                    <h4 class="article__heading--sidebar">
+                                      <a href="ls4.html">Planning the perfect first date</a>
+                                  </h4>
+                  </div>
 
-                        <div class="col-xs-12 col-sm-2 col-md-5 col-lg-5 col-xlg-4 overlay">
-                            <a href="tr2.html.html">
-                                <img class="flex-img" src="assets/images/mr4.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class="col-xs-12 col-sm-9 col-md-7 col-lg-7 col-xlg-7">
-                            <h4 class="article__heading--sidebar">
-                                <a href="tr2.html" class="article__heading ">My summer in Thailand</a>
-                            </h4>
-                        </div>
+                  <div class="col-xs-12 col-sm-2 col-md-5 col-lg-5 col-xlg-4 overlay">
+                    <a href="tr2.html">
+                      <picture>
+                        <source data-srcset="assets/images/tr2-pp--desktop.jpg 850w" media="(min-width: 1380px)">
+                        <source data-srcset="assets/images/tr2-pp-tablet--landscape.jpg 650w" media="(min-width: 1024px)">
+                        <source data-srcset="assets/images/tr2-pp-tablet--portrait.jpg 600w" media="(min-width: 768px)">
+                        <source data-srcset="assets/images/tr2-pp-mobile--landscape.jpg 500w" media="(min-width: 640px)">
+                        <img class="lazyload flex-img" data-src="assets/images/tr2-pp-mobile--portrait.jpg" alt="">
+                      </picture>
+                    </a>
+                  </div>
+                  <div class="col-xs-12 col-sm-9 col-md-7 col-lg-7 col-xlg-7">
+                    <h4 class="article__heading--sidebar"><a href="tr2.html">My summer in Thailand</a></h4>
+                  </div>
 
-                    </div>
                 </div>
+              </div>
 
 
             </aside>
@@ -241,13 +298,18 @@
         </div>
     </section>
     <section class="container">
-        <h4 class="heading">Similar Articles</h4>
+        <h4 class="heading heading--similar-articles">Similar Articles</h4>
 
         <div class="carousel" data-flickity='{ "cellAlign": "left", "contain": true,  "imagesLoaded": true, "lazyLoad": true, "prevNextButtons": true, "wrapAround": true, "autoPlay": 5000, "pageDots": false }'>
 
             <div class="carousel-cell-custom-size">
                 <a class="overlay overlay--subpost" href="tr1.html">
-                    <img src="assets/images/tr-1--post.jpg" alt="" class="lazyload">
+                  <picture>
+                      <source srcset="assets/images/tr1-ltp-tablet--landscape.jpg 500w" media="(min-width: 1024px)">
+                      <source srcset="assets/images/tr1-ltp-tablet--portrait.jpg 700w" media="(min-width: 768px)">
+                      <source srcset="assets/images/tr1-ltp-mobile--landscape.jpg 550w" media="(min-width: 640px)">
+                      <img class="lazyload flex-img" src="assets/images/tr1-ltp-mobile--portrait.jpg" alt="">
+                  </picture>
                     <h3 class="article__subpost-heading">Exploring New York</h3>
                 </a>
             </div>
@@ -255,7 +317,12 @@
 
             <div class="carousel-cell-custom-size">
                 <a class="overlay overlay--subpost" href="tr2.html">
-                    <img src="assets/images/tr-2--post.jpg" alt="" class="lazyload">
+                  <picture>
+                      <source srcset="assets/images/tr2-ltp-tablet--landscape.jpg 500w" media="(min-width: 1024px)">
+                      <source srcset="assets/images/tr2-ltp-tablet--portrait.jpg 700w" media="(min-width: 768px)">
+                      <source srcset="assets/images/tr2-ltp-mobile--landscape.jpg 550w" media="(min-width: 640px)">
+                      <img class="lazyload flex-img" src="assets/images/tr2-ltp-mobile--portrait.jpg" alt="">
+                  </picture>
                     <h3 class="article__subpost-heading">My Summer in Thailand</h3>
                 </a>
             </div>
@@ -263,14 +330,24 @@
 
             <div class="carousel-cell-custom-size">
                 <a class="overlay overlay--subpost" href="tr3.html">
-                    <img src="assets/images/tr-3--post.jpg" alt="" class="lazyload">
+                  <picture>
+                      <source srcset="assets/images/tr3-ltp-tablet--landscape.jpg 500w" media="(min-width: 1024px)">
+                      <source srcset="assets/images/tr3-ltp-tablet--portrait.jpg 700w" media="(min-width: 768px)">
+                      <source srcset="assets/images/tr3-ltp-mobile--landscape.jpg 550w" media="(min-width: 640px)">
+                      <img class="lazyload flex-img" src="assets/images/tr3-ltp-mobile--portrait.jpg" alt="">
+                  </picture>
                     <h3 class="article__subpost-heading">Tokyo&#44; Japan nightlife</h3>
                 </a>
             </div>
 
             <div class="carousel-cell-custom-size">
                 <a class="overlay overlay--subpost" href="tr4.html">
-                    <img src="assets/images/tr-4--post.jpg" alt="" class="lazyload">
+                  <picture>
+                      <source srcset="assets/images/tr4-ltp-tablet--landscape.jpg 500w" media="(min-width: 1024px)">
+                      <source srcset="assets/images/tr4-ltp-tablet--portrait.jpg 700w" media="(min-width: 768px)">
+                      <source srcset="assets/images/tr4-ltp-mobile--landscape.jpg 550w" media="(min-width: 640px)">
+                      <img class="lazyload flex-img" src="assets/images/tr4-ltp-mobile--portrait.jpg" alt="">
+                  </picture>
                     <h3 class="article__subpost-heading">I&#39;m going back to Cali</h3>
                 </a>
             </div>
@@ -278,21 +355,36 @@
 
             <div class="carousel-cell-custom-size">
                 <a class="overlay overlay--subpost" href="tr5.html">
-                    <img src="assets/images/tr5--post.jpg" alt="" class="lazyload">
+                  <picture>
+                      <source srcset="assets/images/tr5-ltp-tablet--landscape.jpg 500w" media="(min-width: 1024px)">
+                      <source srcset="assets/images/tr5-ltp-tablet--portrait.jpg 700w" media="(min-width: 768px)">
+                      <source srcset="assets/images/tr5-ltp-mobile--landscape.jpg 550w" media="(min-width: 640px)">
+                      <img class="lazyload flex-img" src="assets/images/tr5-ltp-mobile--portrait.jpg" alt="">
+                  </picture>
                     <h3 class="article__subpost-heading">Traveling South America by bus</h3>
                 </a>
             </div>
 
             <div class="carousel-cell-custom-size">
                 <a class="overlay overlay--subpost" href="tr7.html">
-                    <img src="assets/images/tr-7--post.jpg" alt="" class="lazyload">
+                  <picture>
+                      <source srcset="assets/images/tr7-ltp-tablet--landscape.jpg 500w" media="(min-width: 1024px)">
+                      <source srcset="assets/images/tr7-ltp-tablet--portrait.jpg 700w" media="(min-width: 768px)">
+                      <source srcset="assets/images/tr7-ltp-mobile--landscape.jpg 550w" media="(min-width: 640px)">
+                      <img class="lazyload flex-img" src="assets/images/tr7-ltp-mobile--portrait.jpg" alt="">
+                  </picture>
                     <h3 class="article__subpost-heading">Don&#39;t have summer travel plans&#63;</h3>
                 </a>
             </div>
 
             <div class="carousel-cell-custom-size">
                 <a class="overlay overlay--subpost" href="tr8.html">
-                    <img src="assets/images/tr-8--post.jpg" alt="" class="lazyload">
+                  <picture>
+                      <source srcset="assets/images/tr8-ltp-tablet--landscape.jpg 500w" media="(min-width: 1024px)">
+                      <source srcset="assets/images/tr8-ltp-tablet--portrait.jpg 700w" media="(min-width: 768px)">
+                      <source srcset="assets/images/tr8-ltp-mobile--landscape.jpg 550w" media="(min-width: 640px)">
+                      <img class="lazyload flex-img" src="assets/images/tr8-ltp-mobile--portrait.jpg" alt="">
+                  </picture>
                     <h3 class="article__subpost-heading">Questions every tourist should consider</h3>
                 </a>
             </div>

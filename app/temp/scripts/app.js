@@ -10587,26 +10587,19 @@ var Tabs = function () {
     _createClass(Tabs, [{
         key: 'events',
         value: function events() {
-            this.tabContent.hide();
-            this.tabNav.find('a').on('click', function (e) {
-                e.preventDefault();
-                (0, _jquery2.default)('.tabs-nav').find('.current').removeClass('current');
+            (0, _jquery2.default)('.tab').hide();
+            (0, _jquery2.default)('.tabs-nav a').bind('click', function (e) {
+                (0, _jquery2.default)('.tabs-nav a.current').removeClass('current');
+                (0, _jquery2.default)('.tab:visible').fadeOut("fast");
+                (0, _jquery2.default)(this.hash).fadeIn("slow");
                 (0, _jquery2.default)(this).addClass('current');
-
-                var newTab = (0, _jquery2.default)(this.hash);
-                var newHeight = newTab.height();
-                var container = (0, _jquery2.default)(".tab-content");
-
-                newTab.siblings(":visible").fadeOut('fast');
-                container.animate({ 'height': newHeight }, 300, function () {
-                    newTab.fadeIn('fast');
-                });
-            }).first().click();
+                e.preventDefault();
+            }).filter(':first').click();
 
             (0, _jquery2.default)('.tab-link').click(function () {
                 (0, _jquery2.default)('html,body').animate({
                     scrollTop: (0, _jquery2.default)('#top').offset().top
-                }, 400);
+                }, 600);
             });
         }
     }]);

@@ -1,72 +1,154 @@
 .heading{
-    font-family: $raleway;
+    font-family: $quest;
 
     &--article{
-        font-family: $raleway;
+        font-family: $quest;
         text-transform:uppercase;
+        font-size: 1.375rem;
+
+        @mixin atMedium{
+          font-size: 1.875rem;
+        }
+
+        @mixin atLarge{
+          font-size: 2.0625rem;
+        }
+
+        @mixin atExLarge{
+          font-size: 2.1875rem;
+        }
     }
 
     &--author{
-        margin-bottom: -10px;
+        margin-bottom: -0.625rem;
+        font-family: $quest;
+
+        @mixin atMedium{
+          margin-top: 3.75rem;
+        }
     }
 
     &--about{
         color:#fff;
-        font-size: 40px;
+        font-size: 2.5rem;
+        font-family: $quest;
 
         @mixin atSmall{
-            font-size: 50px;
+            font-size: 3.125rem;
         }
 
         @mixin atMedium{
-            font-size: 60px;
+            font-size: 3.75rem;
         }
 
         @mixin atLarge{
-            font-size: 80px;
+            font-size: 5rem;
         }
 
         @mixin atExLarge{
-            font-size: 120px;
+            font-size: 7.5rem;
         }
     }
 
     &--about-team{
-        margin-bottom: -5px;
-        
+        margin-bottom: -0.3125rem;
+        font-family: $quest;
+        font-size: 1.5625rem;
+
+        @mixin atSmall{
+          font-size: 1.875rem;
+        }
+
+        @mixin atMedium{
+          font-size: 2.0625rem;
+        }
+
+        @mixin atLarge{
+          font-size: 2.0625rem;
+        }
+
     }
 
     &--advertise{
         color:#fff;
+        font-family: $quest;
 
         @mixin atSmall{
-            font-size: 50px;
+            font-size: 3.125rem;
         }
 
         @mixin atMedium{
-            font-size: 60px;
+            font-size: 3.75rem;
         }
 
         @mixin atLarge{
-            font-size: 80px;
+            font-size: 5rem;
         }
 
         @mixin atExLarge{
-            font-size: 80px;
+            font-size: 5rem;
         }
     }
 
     &--advertise-why-us{
        text-align: center;
+       font-family: $quest;
+       font-size: 1.6875rem;
+
+       @mixin atSmall{
+         font-size: 1.875rem;
+       }
+
+       @mixin atMedium{
+         font-size: 2.1875rem;
+       }
+
+       @mixin atLarge{
+         font-size: 2.1875rem;
+       }
+
+       @mixin atExLarge{
+         font-size: 2.1875rem;
+       }
+    }
+
+    &--stats-number{
+      font-size: 1.375rem;
+
+      @mixin atMedium{
+        font-size: 1.6875rem;
+        margin-bottom: 0.6875rem;
+      }
+
+      @mixin atLarge{
+        font-size: 1.5625rem;
+        margin-bottom: 1rem;
+      }
+
+      @mixin atExLarge{
+        font-size: 1.5625rem;
+        margin-bottom: 0.4375rem;
+      }
+
+
     }
 
     &--site-footer{
         color:#fff;
-        font-size: 22px;
+        font-size: 1.375rem;
     }
 
     &--sidebar{
+        font-family: $quest;
         text-transform: uppercase;
-        font-size: 14px;
+        font-size: 0.8125rem;
+        margin-top: -0.125rem;
+        text-align: center;
     }
+
+    &--similar-articles{
+      font-family: $quest;
+    }
+
+
 }

@@ -38,11 +38,10 @@
     text-align: center;
 
     & a, p{
-        font-family: $raleway;
+        /* font-family: $raleway; */
         color:#fff;
         text-transform:uppercase;
     }
 
 
 }
-
